@@ -14,6 +14,8 @@
 		58D9E3D12411592A00FA46AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9E3D02411592A00FA46AF /* Assets.xcassets */; };
 		58D9E3D42411592A00FA46AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D9E3D22411592A00FA46AF /* LaunchScreen.storyboard */; };
 		58D9E3DF2411592A00FA46AF /* Jet2TravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3DE2411592A00FA46AF /* Jet2TravelTests.swift */; };
+		58D9E3ED24115EEA00FA46AF /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3EC24115EEA00FA46AF /* EmployeeModel.swift */; };
+		58D9E3EF24115F9000FA46AF /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3EE24115F9000FA46AF /* NetworkClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		58D9E3DA2411592A00FA46AF /* Jet2TravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jet2TravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9E3DE2411592A00FA46AF /* Jet2TravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TravelTests.swift; sourceTree = "<group>"; };
 		58D9E3E02411592A00FA46AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D9E3EC24115EEA00FA46AF /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		58D9E3EE24115F9000FA46AF /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 		58D9E3E924115DEF00FA46AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				58D9E3EC24115EEA00FA46AF /* EmployeeModel.swift */,
+				58D9E3EE24115F9000FA46AF /* NetworkClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,8 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D9E3CC2411592800FA46AF /* ViewController.swift in Sources */,
+				58D9E3EF24115F9000FA46AF /* NetworkClass.swift in Sources */,
 				58D9E3C82411592800FA46AF /* AppDelegate.swift in Sources */,
 				58D9E3CA2411592800FA46AF /* SceneDelegate.swift in Sources */,
+				58D9E3ED24115EEA00FA46AF /* EmployeeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
