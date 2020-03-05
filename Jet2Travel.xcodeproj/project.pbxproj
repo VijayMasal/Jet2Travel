@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B5351024117D21000F80B8 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5350F24117D21000F80B8 /* EmployeeDetailView.swift */; };
 		58D9E3C82411592800FA46AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3C72411592800FA46AF /* AppDelegate.swift */; };
 		58D9E3CA2411592800FA46AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3C92411592800FA46AF /* SceneDelegate.swift */; };
 		58D9E3CC2411592800FA46AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3CB2411592800FA46AF /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		58D9E3DF2411592A00FA46AF /* Jet2TravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3DE2411592A00FA46AF /* Jet2TravelTests.swift */; };
 		58D9E3ED24115EEA00FA46AF /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3EC24115EEA00FA46AF /* EmployeeModel.swift */; };
 		58D9E3EF24115F9000FA46AF /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3EE24115F9000FA46AF /* NetworkClass.swift */; };
+		58D9E3F1241171AF00FA46AF /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3F0241171AF00FA46AF /* EmployeeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58B5350F24117D21000F80B8 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
 		58D9E3C42411592800FA46AF /* Jet2Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jet2Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9E3C72411592800FA46AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D9E3C92411592800FA46AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		58D9E3E02411592A00FA46AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D9E3EC24115EEA00FA46AF /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 		58D9E3EE24115F9000FA46AF /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
+		58D9E3F0241171AF00FA46AF /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		58D9E3EA24115DF700FA46AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				58D9E3F0241171AF00FA46AF /* EmployeeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				58D9E3CB2411592800FA46AF /* ViewController.swift */,
+				58B5350F24117D21000F80B8 /* EmployeeDetailView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +239,8 @@
 				58D9E3CC2411592800FA46AF /* ViewController.swift in Sources */,
 				58D9E3EF24115F9000FA46AF /* NetworkClass.swift in Sources */,
 				58D9E3C82411592800FA46AF /* AppDelegate.swift in Sources */,
+				58B5351024117D21000F80B8 /* EmployeeDetailView.swift in Sources */,
+				58D9E3F1241171AF00FA46AF /* EmployeeCell.swift in Sources */,
 				58D9E3CA2411592800FA46AF /* SceneDelegate.swift in Sources */,
 				58D9E3ED24115EEA00FA46AF /* EmployeeModel.swift in Sources */,
 			);

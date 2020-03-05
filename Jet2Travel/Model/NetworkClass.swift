@@ -53,7 +53,7 @@ final class NetworkClass:NSObject{
                         employee.employee_salary = employee_salary
                   }
                 
-                  if let employee_age = dic["employee_age"] as? Int  {
+                  if let employee_age = dic["employee_age"] as? String  {
                         print("employee_age == \(employee_age)")
                         employee.employee_age = employee_age
                   }
@@ -63,7 +63,7 @@ final class NetworkClass:NSObject{
                         employee.profile_image = profile_image
                   }
                   
-                  if let employee_id = dic["id"] as? Int  {
+                  if let employee_id = dic["id"] as? String  {
                         print("employee_id == \(employee_id)")
                         employee.employeeId = employee_id
                   }

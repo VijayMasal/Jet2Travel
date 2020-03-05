@@ -9,9 +9,9 @@
 import Foundation
 
 class Employee {
-    var employeeId: Int = 0
+    var employeeId: String = ""
     var employee_name: String = ""
     var employee_salary: String = ""
-    var employee_age: Int = 0
+    var employee_age: String = ""
     var profile_image: String = ""
 }
