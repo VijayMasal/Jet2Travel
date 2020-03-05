@@ -79,9 +79,11 @@
 		58D9E3C62411592800FA46AF /* Jet2Travel */ = {
 			isa = PBXGroup;
 			children = (
+				58D9E3EB24115DFE00FA46AF /* Controller */,
+				58D9E3EA24115DF700FA46AF /* View */,
+				58D9E3E924115DEF00FA46AF /* Model */,
 				58D9E3C72411592800FA46AF /* AppDelegate.swift */,
 				58D9E3C92411592800FA46AF /* SceneDelegate.swift */,
-				58D9E3CB2411592800FA46AF /* ViewController.swift */,
 				58D9E3CD2411592800FA46AF /* Main.storyboard */,
 				58D9E3D02411592A00FA46AF /* Assets.xcassets */,
 				58D9E3D22411592A00FA46AF /* LaunchScreen.storyboard */,
@@ -97,6 +99,28 @@
 				58D9E3E02411592A00FA46AF /* Info.plist */,
 			);
 			path = Jet2TravelTests;
+			sourceTree = "<group>";
+		};
+		58D9E3E924115DEF00FA46AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58D9E3EA24115DF700FA46AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58D9E3EB24115DFE00FA46AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58D9E3CB2411592800FA46AF /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
