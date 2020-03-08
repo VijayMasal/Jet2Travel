@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Employee {
+struct Employee {
     var employeeId: String = ""
     var employee_name: String = ""
     var employee_salary: String = ""
