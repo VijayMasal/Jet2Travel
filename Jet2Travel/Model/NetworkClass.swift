@@ -17,13 +17,14 @@ final class NetworkClass:NSObject{
     var baseURL = "http://dummy.restapiexample.com/api/v1/employees"
     
     //parse employee data from api into employee model
-    func excuteNetworkCall(completionHandler:@escaping ([Employee],Error?) ->Void)
+    func excuteNetworkCall(completionHandler:@escaping ([Employee]?,Error?) ->Void)
     {
          var employeeArray = [Employee]()
         guard let url = URL(string: baseURL) else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
         guard let dataResponse = data,error == nil else
         {
+            completionHandler(nil,error)
            print(error?.localizedDescription ?? "Response Error")
            return
               }
@@ -42,7 +43,7 @@ final class NetworkClass:NSObject{
                 //get all employee details into employee model
                 for dic in jsonArray!
                {
-                    let employee = Employee()
+                var employee = Employee()
                 if let employee_name = dic["employee_name"] as? String  {
                         print("employee_name == \(employee_name)")
                         employee.employee_name = employee_name
@@ -74,7 +75,7 @@ final class NetworkClass:NSObject{
             
              } catch let parsingError {
                 print("Error", parsingError)
-                completionHandler(employeeArray,error)
+                completionHandler(nil,error)
            }
         }
         task.resume()
