@@ -11,6 +11,8 @@ import UIKit
 class EmployeeCell: UITableViewCell {
     @IBOutlet weak var backView: UIView!
     
+    @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var moveNextButton: UIButton!
     @IBOutlet weak var employeeName: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     override func awakeFromNib() {
