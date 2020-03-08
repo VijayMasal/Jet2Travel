@@ -63,14 +63,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let isage = UserDefaults.standard.bool(forKey: "agesort")
         //Sort employee by name alphabetically
          if(isName == true && isage == false){
-           self.employeeArray = sortEmployeeArray.sorted(by: { ($0.employee_name < $1.employee_name) } )
+           self.employeeArray = employeeArray.sorted(by: { ($0.employee_name < $1.employee_name) } )
         }////Sort employee by age numerically
         else if((isName == false && isage == true)){
             
-        self.employeeArray = sortEmployeeArray.sorted(by: {  ($0.employee_age < $1.employee_age)} )
+        self.employeeArray = employeeArray.sorted(by: {  ($0.employee_age < $1.employee_age)} )
             
-        }else{//show normal data
-             self.employeeArray = sortEmployeeArray
+        }
+         else{//show normal data
+             self.employeeArray = employeeArray.sorted(by: {  ($0.employeeId < $1.employeeId)} )
         }
         
         DispatchQueue.main.async {
@@ -132,7 +133,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 cell.deleteButton.isHidden = false
                 let employee = employeeArray[indexPath.row]
                 cell.employeeName.text = employee.employee_name
-                   //print(employeeArray[indexPath.row])
+                if employee.profile_image == "" {
+                    cell.profileImage.image = UIImage(systemName: "person")
+                }
                    return cell
                }
            }
