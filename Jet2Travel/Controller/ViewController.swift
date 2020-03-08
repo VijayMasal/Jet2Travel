@@ -13,10 +13,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
 @IBOutlet weak var employeeTable: UITableView!
    var employeeArray = [Employee]()
+    var sortEmployeeArray = [Employee]()
    var filteredEmployeeArray = [Employee]()
     var resultSearchController = UISearchController()
     override func viewDidLoad() {
             super.viewDidLoad()
+        self.title = "Employee"
+        //add setting button on navigation bar
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "setting"), style: .plain, target: self, action: #selector(settingTapped))
         
             //UISearchController controller
             resultSearchController = ({
@@ -33,6 +37,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //call network method for retriving data from api
             NetworkClass.sharedInstance.excuteNetworkCall { employee,error  in
                 if let employess = employee{
+                    self.sortEmployeeArray = employess
                     self.employeeArray = employess
                 DispatchQueue.main.async {
                     self.employeeTable.alpha = 1.0
@@ -50,6 +55,40 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
            
         }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        let isName = UserDefaults.standard.bool(forKey: "namesort")
+        let isage = UserDefaults.standard.bool(forKey: "agesort")
+        //Sort employee by name alphabetically
+         if(isName == true && isage == false){
+           self.employeeArray = sortEmployeeArray.sorted(by: { ($0.employee_name < $1.employee_name) } )
+        }////Sort employee by age numerically
+        else if((isName == false && isage == true)){
+            
+        self.employeeArray = sortEmployeeArray.sorted(by: {  ($0.employee_age < $1.employee_age)} )
+            
+        }else{//show normal data
+             self.employeeArray = sortEmployeeArray
+        }
+        
+        DispatchQueue.main.async {
+            self.employeeTable.alpha = 1.0
+            self.employeeTable.reloadData()
+        }
+    }
+    
+
+    //navigate on setting view 
+    @objc func settingTapped(){
+        
+        let detailView = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+           self.navigationController?.pushViewController(detailView, animated: true)
+                 
+              }
+           
+    
     //show error alert message
         func showAlert(error : NSError)  {
             let alert = UIAlertController(title: error.localizedDescription, message: nil, preferredStyle: .alert)
@@ -93,7 +132,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 cell.deleteButton.isHidden = false
                 let employee = employeeArray[indexPath.row]
                 cell.employeeName.text = employee.employee_name
-                   print(employeeArray[indexPath.row])
+                   //print(employeeArray[indexPath.row])
                    return cell
                }
            }

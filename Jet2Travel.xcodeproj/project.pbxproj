@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58B5351024117D21000F80B8 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5350F24117D21000F80B8 /* EmployeeDetailView.swift */; };
+		58B5354A2414E1C9000F80B8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B535492414E1C9000F80B8 /* SettingsViewController.swift */; };
 		58D9E3C82411592800FA46AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3C72411592800FA46AF /* AppDelegate.swift */; };
 		58D9E3CA2411592800FA46AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3C92411592800FA46AF /* SceneDelegate.swift */; };
 		58D9E3CC2411592800FA46AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E3CB2411592800FA46AF /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		58B5350F24117D21000F80B8 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
+		58B535492414E1C9000F80B8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		58D9E3C42411592800FA46AF /* Jet2Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jet2Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9E3C72411592800FA46AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D9E3C92411592800FA46AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				58D9E3CB2411592800FA46AF /* ViewController.swift */,
 				58B5350F24117D21000F80B8 /* EmployeeDetailView.swift */,
+				58B535492414E1C9000F80B8 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				58D9E3F1241171AF00FA46AF /* EmployeeCell.swift in Sources */,
 				58D9E3CA2411592800FA46AF /* SceneDelegate.swift in Sources */,
 				58D9E3ED24115EEA00FA46AF /* EmployeeModel.swift in Sources */,
+				58B5354A2414E1C9000F80B8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
